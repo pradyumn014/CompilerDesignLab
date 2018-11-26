@@ -1,0 +1,13 @@
+4
+S E T A
+4
+id = + num 
+S
+2
+4
+S:id=E
+E:T+A
+T:id
+A:num
+5
+id = id + num

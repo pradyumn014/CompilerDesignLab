@@ -1,0 +1,28 @@
+Enter the number of non-terminals
+Enter the non-terminals
+Enter the number of terminals
+Enter the terminals
+Enter the start non-terminal
+ Enter your choice 
+ 1. Provide LL(1) table as input 
+ 2. Provide LL(1) grammar as input 
+Enter the number of productions
+Enter all the productions 
+The LL(1) Parsing Table is 
+   $ |   + |   = |   id |   num |
+A :  -  |  -  |  -  |  -  | num  | 
+E :  -  |  -  |  -  | T + A  |  -  | 
+S :  -  |  -  |  -  | id = E  |  -  | 
+T :  -  |  -  |  -  | id  |  -  | 
+Enter the string to be parsed in terms of tokens
+Enter its length
+ STACK : $ S  , STRING :$ num + id = id 
+ STACK : $ E = id  , STRING :$ num + id = id 
+ STACK : $ E =  , STRING :$ num + id = 
+ STACK : $ E  , STRING :$ num + id 
+ STACK : $ A + T  , STRING :$ num + id 
+ STACK : $ A + id  , STRING :$ num + id 
+ STACK : $ A +  , STRING :$ num + 
+ STACK : $ A  , STRING :$ num 
+ STACK : $ num  , STRING :$ num 
+ACCEPTED
